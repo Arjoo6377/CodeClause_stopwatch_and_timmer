@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="timer.css">
+    <title>Document</title>
+</head>
+
+<body>
+  
+    <!-- <button class="abc" onclick="time()">time</button> -->
+    <p id="ab" style="font-size: 100px;"></p>
+    <script>
+        function time() { setInterval(() =>{
+            
+                let a = new Date();
+                let date = a.toLocaleDateString();
+                let time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
+                document.getElementById("ab").innerHTML =  time +  " on " + date;
+          
+            },1000)
+        }
+        time();
+    </script>
+
+<div class="btn">
+
+    <a href ="main.html"><button class="btnd">Back to main</button></a>
+</div>
+
+</body>
+
+</html>
